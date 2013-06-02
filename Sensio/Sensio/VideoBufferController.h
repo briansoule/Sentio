@@ -10,13 +10,14 @@
 #import <Cocoa/Cocoa.h>
 #import <QTKit/QTkit.h>
 
+@class RawVideoOutput;
+
 @interface VideoBufferController : NSObject{
     IBOutlet QTCaptureView *mCaptureView;
     
     QTCaptureSession            *mCaptureSession;
-    QTCaptureMovieFileOutput    *mCaptureMovieFileOutput;
     QTCaptureDeviceInput        *mCaptureVideoDeviceInput;
-    QTCaptureDeviceInput        *mCaptureAudioDeviceInput;
+    RawVideoOutput              *decompressedOutput;
 }
 
 - (IBAction)startBuffer:(id)sender;

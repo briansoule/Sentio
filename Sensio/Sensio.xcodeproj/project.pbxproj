@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50482C52175AE941004FEF18 /* RawVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 50482C51175AE941004FEF18 /* RawVideoOutput.m */; };
+		50482C54175AEAF1004FEF18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50482C53175AEAF1004FEF18 /* CoreVideo.framework */; };
 		5F32875C175ACB3B000B0E23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32875B175ACB3B000B0E23 /* Cocoa.framework */; };
 		5F328766175ACB3B000B0E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F328764175ACB3B000B0E23 /* InfoPlist.strings */; };
 		5F328768175ACB3B000B0E23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F328767175ACB3B000B0E23 /* main.m */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50482C50175AE941004FEF18 /* RawVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawVideoOutput.h; sourceTree = "<group>"; };
+		50482C51175AE941004FEF18 /* RawVideoOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawVideoOutput.m; sourceTree = "<group>"; };
+		50482C53175AEAF1004FEF18 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		5F328758175ACB3B000B0E23 /* Sensio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F32875B175ACB3B000B0E23 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5F32875E175ACB3B000B0E23 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50482C54175AEAF1004FEF18 /* CoreVideo.framework in Frameworks */,
 				5F328792175ACC28000B0E23 /* Foundation.framework in Frameworks */,
 				5F328791175ACC20000B0E23 /* AppKit.framework in Frameworks */,
 				5F328790175ACC14000B0E23 /* QTKit.framework in Frameworks */,
@@ -85,6 +91,7 @@
 		5F32874F175ACB3B000B0E23 = {
 			isa = PBXGroup;
 			children = (
+				50482C53175AEAF1004FEF18 /* CoreVideo.framework */,
 				5F328761175ACB3B000B0E23 /* Sensio */,
 				5F32877E175ACB3C000B0E23 /* SensioTests */,
 				5F32875A175ACB3B000B0E23 /* Frameworks */,
@@ -127,6 +134,8 @@
 			children = (
 				5F32876D175ACB3B000B0E23 /* AppDelegate.h */,
 				5F32876E175ACB3B000B0E23 /* AppDelegate.m */,
+				50482C50175AE941004FEF18 /* RawVideoOutput.h */,
+				50482C51175AE941004FEF18 /* RawVideoOutput.m */,
 				5F328796175ACCFD000B0E23 /* VideoBufferController.h */,
 				5F328797175ACCFD000B0E23 /* VideoBufferController.m */,
 				5F328770175ACB3C000B0E23 /* MainMenu.xib */,
@@ -277,6 +286,7 @@
 				5F328768175ACB3B000B0E23 /* main.m in Sources */,
 				5F32876F175ACB3B000B0E23 /* AppDelegate.m in Sources */,
 				5F328798175ACCFE000B0E23 /* VideoBufferController.m in Sources */,
+				50482C52175AE941004FEF18 /* RawVideoOutput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
