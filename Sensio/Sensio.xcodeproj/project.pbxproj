@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F32875C175ACB3B000B0E23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32875B175ACB3B000B0E23 /* Cocoa.framework */; };
+		5F328766175ACB3B000B0E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F328764175ACB3B000B0E23 /* InfoPlist.strings */; };
+		5F328768175ACB3B000B0E23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F328767175ACB3B000B0E23 /* main.m */; };
+		5F32876C175ACB3B000B0E23 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F32876A175ACB3B000B0E23 /* Credits.rtf */; };
+		5F32876F175ACB3B000B0E23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32876E175ACB3B000B0E23 /* AppDelegate.m */; };
+		5F328772175ACB3C000B0E23 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F328770175ACB3C000B0E23 /* MainMenu.xib */; };
+		5F32877A175ACB3C000B0E23 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F328779175ACB3C000B0E23 /* SenTestingKit.framework */; };
+		5F32877B175ACB3C000B0E23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32875B175ACB3B000B0E23 /* Cocoa.framework */; };
+		5F328783175ACB3C000B0E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F328781175ACB3C000B0E23 /* InfoPlist.strings */; };
+		5F328786175ACB3C000B0E23 /* SensioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F328785175ACB3C000B0E23 /* SensioTests.m */; };
+		5F328790175ACC14000B0E23 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32878F175ACC14000B0E23 /* QTKit.framework */; };
+		5F328791175ACC20000B0E23 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32875E175ACB3B000B0E23 /* AppKit.framework */; };
+		5F328792175ACC28000B0E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F328760175ACB3B000B0E23 /* Foundation.framework */; };
+		5F328798175ACCFE000B0E23 /* VideoBufferController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F328797175ACCFD000B0E23 /* VideoBufferController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F32877C175ACB3C000B0E23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F328750175ACB3B000B0E23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F328757175ACB3B000B0E23;
+			remoteInfo = Sensio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F328758175ACB3B000B0E23 /* Sensio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F32875B175ACB3B000B0E23 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5F32875E175ACB3B000B0E23 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5F32875F175ACB3B000B0E23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5F328760175ACB3B000B0E23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F328763175ACB3B000B0E23 /* Sensio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sensio-Info.plist"; sourceTree = "<group>"; };
+		5F328765175ACB3B000B0E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F328767175ACB3B000B0E23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F328769175ACB3B000B0E23 /* Sensio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sensio-Prefix.pch"; sourceTree = "<group>"; };
+		5F32876B175ACB3B000B0E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5F32876D175ACB3B000B0E23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F32876E175ACB3B000B0E23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F328771175ACB3C000B0E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F328778175ACB3C000B0E23 /* SensioTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensioTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F328779175ACB3C000B0E23 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F328780175ACB3C000B0E23 /* SensioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SensioTests-Info.plist"; sourceTree = "<group>"; };
+		5F328782175ACB3C000B0E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F328784175ACB3C000B0E23 /* SensioTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensioTests.h; sourceTree = "<group>"; };
+		5F328785175ACB3C000B0E23 /* SensioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensioTests.m; sourceTree = "<group>"; };
+		5F32878F175ACC14000B0E23 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		5F328796175ACCFD000B0E23 /* VideoBufferController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBufferController.h; sourceTree = "<group>"; };
+		5F328797175ACCFD000B0E23 /* VideoBufferController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoBufferController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F328755175ACB3B000B0E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F328792175ACC28000B0E23 /* Foundation.framework in Frameworks */,
+				5F328791175ACC20000B0E23 /* AppKit.framework in Frameworks */,
+				5F328790175ACC14000B0E23 /* QTKit.framework in Frameworks */,
+				5F32875C175ACB3B000B0E23 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F328774175ACB3C000B0E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F32877A175ACB3C000B0E23 /* SenTestingKit.framework in Frameworks */,
+				5F32877B175ACB3C000B0E23 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F32874F175ACB3B000B0E23 = {
+			isa = PBXGroup;
+			children = (
+				5F328761175ACB3B000B0E23 /* Sensio */,
+				5F32877E175ACB3C000B0E23 /* SensioTests */,
+				5F32875A175ACB3B000B0E23 /* Frameworks */,
+				5F328759175ACB3B000B0E23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F328759175ACB3B000B0E23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F328758175ACB3B000B0E23 /* Sensio.app */,
+				5F328778175ACB3C000B0E23 /* SensioTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F32875A175ACB3B000B0E23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F32878F175ACC14000B0E23 /* QTKit.framework */,
+				5F32875B175ACB3B000B0E23 /* Cocoa.framework */,
+				5F328779175ACB3C000B0E23 /* SenTestingKit.framework */,
+				5F32875D175ACB3B000B0E23 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F32875D175ACB3B000B0E23 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F32875E175ACB3B000B0E23 /* AppKit.framework */,
+				5F32875F175ACB3B000B0E23 /* CoreData.framework */,
+				5F328760175ACB3B000B0E23 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5F328761175ACB3B000B0E23 /* Sensio */ = {
+			isa = PBXGroup;
+			children = (
+				5F32876D175ACB3B000B0E23 /* AppDelegate.h */,
+				5F32876E175ACB3B000B0E23 /* AppDelegate.m */,
+				5F328796175ACCFD000B0E23 /* VideoBufferController.h */,
+				5F328797175ACCFD000B0E23 /* VideoBufferController.m */,
+				5F328770175ACB3C000B0E23 /* MainMenu.xib */,
+				5F328762175ACB3B000B0E23 /* Supporting Files */,
+			);
+			path = Sensio;
+			sourceTree = "<group>";
+		};
+		5F328762175ACB3B000B0E23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F328763175ACB3B000B0E23 /* Sensio-Info.plist */,
+				5F328764175ACB3B000B0E23 /* InfoPlist.strings */,
+				5F328767175ACB3B000B0E23 /* main.m */,
+				5F328769175ACB3B000B0E23 /* Sensio-Prefix.pch */,
+				5F32876A175ACB3B000B0E23 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F32877E175ACB3C000B0E23 /* SensioTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F328784175ACB3C000B0E23 /* SensioTests.h */,
+				5F328785175ACB3C000B0E23 /* SensioTests.m */,
+				5F32877F175ACB3C000B0E23 /* Supporting Files */,
+			);
+			path = SensioTests;
+			sourceTree = "<group>";
+		};
+		5F32877F175ACB3C000B0E23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F328780175ACB3C000B0E23 /* SensioTests-Info.plist */,
+				5F328781175ACB3C000B0E23 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F328757175ACB3B000B0E23 /* Sensio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F328789175ACB3C000B0E23 /* Build configuration list for PBXNativeTarget "Sensio" */;
+			buildPhases = (
+				5F328754175ACB3B000B0E23 /* Sources */,
+				5F328755175ACB3B000B0E23 /* Frameworks */,
+				5F328756175ACB3B000B0E23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sensio;
+			productName = Sensio;
+			productReference = 5F328758175ACB3B000B0E23 /* Sensio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F328777175ACB3C000B0E23 /* SensioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F32878C175ACB3C000B0E23 /* Build configuration list for PBXNativeTarget "SensioTests" */;
+			buildPhases = (
+				5F328773175ACB3C000B0E23 /* Sources */,
+				5F328774175ACB3C000B0E23 /* Frameworks */,
+				5F328775175ACB3C000B0E23 /* Resources */,
+				5F328776175ACB3C000B0E23 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F32877D175ACB3C000B0E23 /* PBXTargetDependency */,
+			);
+			name = SensioTests;
+			productName = SensioTests;
+			productReference = 5F328778175ACB3C000B0E23 /* SensioTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F328750175ACB3B000B0E23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Sensio;
+			};
+			buildConfigurationList = 5F328753175ACB3B000B0E23 /* Build configuration list for PBXProject "Sensio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F32874F175ACB3B000B0E23;
+			productRefGroup = 5F328759175ACB3B000B0E23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F328757175ACB3B000B0E23 /* Sensio */,
+				5F328777175ACB3C000B0E23 /* SensioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F328756175ACB3B000B0E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F328766175ACB3B000B0E23 /* InfoPlist.strings in Resources */,
+				5F32876C175ACB3B000B0E23 /* Credits.rtf in Resources */,
+				5F328772175ACB3C000B0E23 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F328775175ACB3C000B0E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F328783175ACB3C000B0E23 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F328776175ACB3C000B0E23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F328754175ACB3B000B0E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F328768175ACB3B000B0E23 /* main.m in Sources */,
+				5F32876F175ACB3B000B0E23 /* AppDelegate.m in Sources */,
+				5F328798175ACCFE000B0E23 /* VideoBufferController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F328773175ACB3C000B0E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F328786175ACB3C000B0E23 /* SensioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F32877D175ACB3C000B0E23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F328757175ACB3B000B0E23 /* Sensio */;
+			targetProxy = 5F32877C175ACB3C000B0E23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F328764175ACB3B000B0E23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F328765175ACB3B000B0E23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F32876A175ACB3B000B0E23 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F32876B175ACB3B000B0E23 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5F328770175ACB3C000B0E23 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F328771175ACB3C000B0E23 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5F328781175ACB3C000B0E23 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F328782175ACB3C000B0E23 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F328787175ACB3C000B0E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F328788175ACB3C000B0E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F32878A175ACB3C000B0E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
+				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F32878B175ACB3C000B0E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
+				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F32878D175ACB3C000B0E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sensio.app/Contents/MacOS/Sensio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
+				INFOPLIST_FILE = "SensioTests/SensioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F32878E175ACB3C000B0E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sensio.app/Contents/MacOS/Sensio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
+				INFOPLIST_FILE = "SensioTests/SensioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F328753175ACB3B000B0E23 /* Build configuration list for PBXProject "Sensio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F328787175ACB3C000B0E23 /* Debug */,
+				5F328788175ACB3C000B0E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F328789175ACB3C000B0E23 /* Build configuration list for PBXNativeTarget "Sensio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F32878A175ACB3C000B0E23 /* Debug */,
+				5F32878B175ACB3C000B0E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F32878C175ACB3C000B0E23 /* Build configuration list for PBXNativeTarget "SensioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F32878D175ACB3C000B0E23 /* Debug */,
+				5F32878E175ACB3C000B0E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F328750175ACB3B000B0E23 /* Project object */;
+}
