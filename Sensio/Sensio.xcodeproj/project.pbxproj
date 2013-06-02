@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50482C52175AE941004FEF18 /* RawVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 50482C51175AE941004FEF18 /* RawVideoOutput.m */; };
 		50482C54175AEAF1004FEF18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50482C53175AEAF1004FEF18 /* CoreVideo.framework */; };
+		50482C58175AEF52004FEF18 /* libccv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50482C57175AEF52004FEF18 /* libccv.a */; };
 		5F32875C175ACB3B000B0E23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F32875B175ACB3B000B0E23 /* Cocoa.framework */; };
 		5F328766175ACB3B000B0E23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F328764175ACB3B000B0E23 /* InfoPlist.strings */; };
 		5F328768175ACB3B000B0E23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F328767175ACB3B000B0E23 /* main.m */; };
@@ -39,6 +40,8 @@
 		50482C50175AE941004FEF18 /* RawVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RawVideoOutput.h; sourceTree = "<group>"; };
 		50482C51175AE941004FEF18 /* RawVideoOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RawVideoOutput.m; sourceTree = "<group>"; };
 		50482C53175AEAF1004FEF18 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		50482C56175AEF52004FEF18 /* ccv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccv.h; path = ../ccv/lib/ccv.h; sourceTree = "<group>"; };
+		50482C57175AEF52004FEF18 /* libccv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libccv.a; path = ../ccv/lib/libccv.a; sourceTree = "<group>"; };
 		5F328758175ACB3B000B0E23 /* Sensio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F32875B175ACB3B000B0E23 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5F32875E175ACB3B000B0E23 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -73,6 +76,7 @@
 				5F328791175ACC20000B0E23 /* AppKit.framework in Frameworks */,
 				5F328790175ACC14000B0E23 /* QTKit.framework in Frameworks */,
 				5F32875C175ACB3B000B0E23 /* Cocoa.framework in Frameworks */,
+				50482C58175AEF52004FEF18 /* libccv.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50482C55175AEF3A004FEF18 /* ccv */ = {
+			isa = PBXGroup;
+			children = (
+				50482C56175AEF52004FEF18 /* ccv.h */,
+				50482C57175AEF52004FEF18 /* libccv.a */,
+			);
+			name = ccv;
+			sourceTree = "<group>";
+		};
 		5F32874F175ACB3B000B0E23 = {
 			isa = PBXGroup;
 			children = (
 				50482C53175AEAF1004FEF18 /* CoreVideo.framework */,
 				5F328761175ACB3B000B0E23 /* Sensio */,
 				5F32877E175ACB3C000B0E23 /* SensioTests */,
+				50482C55175AEF3A004FEF18 /* ccv */,
 				5F32875A175ACB3B000B0E23 /* Frameworks */,
 				5F328759175ACB3B000B0E23 /* Products */,
 			);
@@ -410,7 +424,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
 				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ccv/lib\"",
+					/usr/local/Cellar/gsl/1.15/lib,
+					/usr/local/Cellar/jpeg/8d/lib,
+					/usr/X11/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-lpng",
+					"-ljpeg",
+					"-lgsl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -423,7 +449,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
 				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ccv/lib\"",
+					/usr/local/Cellar/gsl/1.15/lib,
+					/usr/local/Cellar/jpeg/8d/lib,
+					/usr/X11/lib,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-lpng",
+					"-ljpeg",
+					"-lgsl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
