@@ -400,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
 				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sensio/Sensio-Prefix.pch";
 				INFOPLIST_FILE = "Sensio/Sensio-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +468,7 @@
 				5F32878B175ACB3C000B0E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F32878C175ACB3C000B0E23 /* Build configuration list for PBXNativeTarget "SensioTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +477,7 @@
 				5F32878E175ACB3C000B0E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
